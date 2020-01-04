@@ -1,0 +1,147 @@
+.mt-6 {
+  margin-top: 10rem;
+}
+.text-small {
+  font-size: 0.75rem;
+}
+.t-decoration-none {
+  text-decoration: none !important;
+}
+
+/*------------------- NAVBAR------------ */
+/* Navbar Search */
+#navbar-main #search-form-div input {
+  padding-left: 2.375rem;
+}
+#navbar-main #search-form-div span {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/* Navbar Menu Items */
+
+.navbar #nav-all-items {
+  max-width: 1128px;
+}
+
+.navbar .navbar-brand {
+  color: #0e76a8;
+}
+#navbar-main .nav-item .navbar-text {
+  font-size: 0.7rem ;
+  padding-bottom: 0;;
+}
+#navbar-main #profile-photo {
+  border-right: 1px solid #999;
+}
+#navbar-main #profile-photo  img {
+  width: 1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border-top: 0 !important;
+  padding-bottom: 0;
+  padding-top: 0;  
+}
+
+
+/*------------------- CONTENT BODY ------------ */
+#content-body {
+  max-width: 1128px;
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+
+
+#content-body-left {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 100vh;
+  max-width: 186px !important;
+  background-color: #fef;
+}
+
+#content-body-left .card img {
+  border-radius: 50%;
+}
+
+
+
+#content-body-left #my-design {
+  background: white;
+  /* border-bottom: 1px solid red !important;
+  border-right: 1px solid blue !important;
+  border: 3px red !important;
+  border-top: green; */
+  
+}
+
+#content-body-left #my-design #green-zone {
+  margin-left: 0;
+  height: 5rem;
+  background-color: #0db4d1;
+}
+
+#content-body-left #my-design img {
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  width: 5rem;
+  margin-top: -2.5rem;
+  left: 50%;
+  margin-left: -2.5rem;
+}
+
+#content-body-left #my-design h5 {
+  margin-top: 4rem !important;
+}
+
+#content-body-left #my-design .card-under-picture,
+#content-body-left #my-design .second-section {
+  border-bottom: 1px solid #ddd;
+}
+
+#content-body-left #my-design .text-small {
+  font-size: 0.75rem;
+}
+
+
+
+
+
+#content-body-center {
+  min-height: 100vh;
+  background-color: #eee;
+  border: 1px red;
+}
+
+#content-body-center #write-post {
+  /* margin-top: 10rem !important; */
+}
+
+
+#content-body-center #write-post #input-row {
+  height: 3.5rem ;
+}
+
+#content-body-center #write-post #input-row #start-post {
+  margin-top: 1rem;
+  /* position: absolute !important; */
+  height: 1.5rem;
+  margin-left: 1rem;
+  /* top: 1rem !important; */
+
+}
+
+
+#content-body-right {
+  min-height: 100vh;
+  background-color: #ddd;
+}
