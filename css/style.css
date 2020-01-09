@@ -210,4 +210,42 @@
 
 
 
+/* Collapsable Message Form */
+#collapsable-messages #search-form-div input {
+  padding-left: 2.375rem;
+}
+#collapsable-messages #search-form-div span {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+
+.message-options-menu {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 3;
+}
+.message-options-menu i {
+  border: 1px grey;
+  margin-top: 50%; 
+    
+}
+.message-options-menu input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+/* End of Collapsable Message Form */
+
+
+
 
