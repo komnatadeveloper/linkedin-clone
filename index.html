@@ -4,9 +4,1255 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Linkedin Clone</title>
 </head>
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 sticky-top">
+    <div id="nav-all-items" class="d-flex flex-row mx-auto" style="justify-content: space-between !important;">      
+      <span class="d-flex flex-row align-items-center">
+        <!-- LOGO -->
+        <a class="navbar-brand " href="#"><i class="fab fa-linkedin fa-2x "></i></a>
+        <!-- Searchbar -->
+        <form  class="form-inline my-2 my-lg-0 ">
+          <div id='search-form-div' class="input-group ">
+          <span class="fa fa-search form-control-feedback"></span>
+            <input class="form-control  mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+      </span>
+
+    
+      <div 
+        class="collapse navbar-collapse d-inline d-flex flex-row justify-content-end " 
+        id="navbar-main"
+        style="justify-self: flex-end;"
+      >
+        <!-- Other Menu Items on Navbar -->
+        <ul 
+          class="navbar-nav mr-auto d-flex flex-row justify-content-end w-100"
+        >
+
+          <li class="nav-item active">
+            <a class="nav-link d-flex flex-column" href="#"> 
+              <i class="fas fa-home fa-lg text-center"></i>
+              <span class="navbar-text">Home</span>            
+            </a>          
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link d-flex flex-column" href="#"> 
+              <i class="fas fa-user-friends fa-lg text-center"></i>
+              <span class="navbar-text">My Network</span>
+            </a>          
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link d-flex flex-column" href="#"> 
+              <i class="fas fa-suitcase fa-lg text-center"></i>
+              <span class="navbar-text">Jobs</span>
+            </a>          
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link d-flex flex-column" href="#"> 
+              <i class="fas fa-comments fa-lg text-center"></i>
+              <span class="navbar-text">Messaging</span>
+            </a>          
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link d-flex flex-column" href="#"> 
+              <i class="fas fa-bell fa-lg text-center"></i>
+              <span class="navbar-text">Notifications</span>
+            </a>          
+          </li>
+
+          <li 
+            id="profile-photo"
+            class="nav-item active"
+          >
+            <a class="nav-link d-flex flex-column" href="#">
+              <img class="rounded-circle img-fluid" src="/img/profile-photo/prof-4.jpg" alt=""> 
+              
+              <span class="navbar-text">Me</span>
+            </a>          
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link d-flex flex-column" href="#">
+              <i class="fas fa-th fa-lg text-center"></i>
+              <span class="navbar-text">Work</span>
+            </a>
+          </li>        
+        </ul>      
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navbar -->
+
+  <!-- BODY  -->
+  <div id="content-body" class="container mx-auto mt-5">
+    <div class="row ">
+
+      <!-- BODY LEFT -->
+      <div id="content-body-left"  class="col-sm-2  py-0">
+
+
+        
+
+
+
+        <!-- Profile left My Design -->
+        <div id="my-design" class="mb-2 border border-muted rounded">
+          <div id="green-zone">
+
+          </div>
+          <img class="img-fluid img-circle" src="img/profile-photo/prof-4.jpg" alt="">
+
+          <div  class="px-1 card-under-picture">
+
+            <h5 class="text-center mt-5">Jane Smith</h5>
+            <p class="text-center">Student at California State University </p>
+          </div>
+          <div>
+            <span class="d-flex flex-row justify-content-between mt-3 px-2 d-block">
+              <span >
+                <span class="d-block text-small">Connections</span> 
+                <span class="d-block text-small font-weight-bold">Grow your network</span> 
+              </span>
+              <i class="fas fa-user-plus mt-1 fa-sm text-primary"></i>
+            </span>
+            <span class="mt-3 px-2 d-block second-section">
+              <p class="text-small">Learn the most in-demand skills</p>
+              <p class="text-small font-weight-bold">Try learning Free for 1 Month</p>
+            </span>
+
+            <span class="px-2">
+              <i class="far fa-bookmark fa-sm mr-2 d-inline"></i>
+              <p class="text-small font-weight-bold d-inline">
+                Saved Items
+              </p>
+            </span>
+          </div>          
+        </div>
+
+        <div 
+          style="                    
+            position: sticky;
+            top: 4rem; 
+          "
+          id="my-design-card-2"         
+          class="border rounded border-muted my-2 bg-light"
+        >
+          <span class="d-flex flex-column px-2">
+            <a href="#" class="text-primary text-small my-2">Groups</a>
+          </span>
+          <a href="#" class="t-decoration-none">
+            <span class="d-flex flex-row justify-content-between px-2 t-decoration-none">
+              <span class="text-small t-decoration-none">Events</span>
+              <i class="fas fa-plus fa-sm text-muted t-decoration-none"></i>
+            </span>
+          </a>
+          <span class="d-flex flex-column px-2  border-bottom">
+            <a href="#" class="text-primary text-small my-2">Followed Hashtags</a>
+          </span>
+          <span class="d-flex flex-column px-2  mx-auto">
+            <a href="#" class="text-dark text-small my-2 mx-auto">Discover more</a>
+          </span>
+          
+
+        </div> 
+
+
+
+        
+      </div> <!-- End of Body Left -->
+
+
+      <!-- BODY CENTER -->
+      <div id="content-body-center"  class="col-sm-6 ">
+
+
+
+        <div class=""   id="write-post">
+          <div class=" mx-0 px-0 border rounded">
+            <div id="input-row" class="d-flex flex-row justify-content-between border-bottom  t-decoration-none">
+
+              <a  href="#" class="t-decoration-none w-100 border-right">
+                <div class="ml-1">
+                  <div class="t-decoration-none"   id="start-post">
+                    <i class="d-inline  far fa-edit text-muted mr-2 t-decoration-none"></i>
+                    <span class="t-decoration-none text-muted">Start a post</span> 
+                  </div>
+                </div>
+              </a> 
+
+
+              <a class="d-inline border-right" style="width: 5.5rem !important; height: 3.5rem;" href="#">
+                <i style="height: 1rem; margin-top: 1.25rem; margin-left: 1.25rem;" class="fas fa-camera text-muted align-middle"></i>
+              </a> 
+              <a class="d-inline border-right" style="width: 5.5rem; height: 3.5rem;" href="#">
+                <i style="height: 1rem; margin-top: 1.25rem; margin-left: 1.25rem;" class="fas fa-video text-muted align-middle"></i>
+              </a>
+              <a class="d-inline " style="width: 5.5rem; height: 3.5rem;" href="#">
+                <i style="height: 1rem; margin-top: 1.25rem; margin-left: 1.25rem;" class="far fa-file-alt text-muted align-middle"></i>
+              </a>          
+            </div>
+
+            <div style="height: 3rem;" class="m-0 bg-light">
+              <div style="height: 3rem;" class="m-0 d-flex flex-column align-items-center">
+                <div style="margin-top: 0.75rem;" class=" w-100">
+                  <div style="height: 1.5rem;  margin-left: 1rem;"><a href="#"  class="t-decoration-none d-inline">Write an article</a>
+                    <p class="d-inline text-muted"> on Linkedin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End of Write Post and Write Article -->
+        </div> <!-- End of Write Post -->
+
+        <!-- Horizontal Line and Sort Posts -->
+        <span class="left-side-hr">
+          <span class="text-small text-muted mr-1">Sort By: </span>
+        
+          <a class="btn-outline-secondary dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="font-weight-bold text-small">Top </span>
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Top</a>
+            <a class="dropdown-item" href="#">Recent</a>
+          </div>
+        </span>
+        <!-- End of Horizontal Line and Sort Posts -->
+
+        <!-- Like This card -->
+        <div id="like-this-card" class="my-2 border border-muted rounded bg-white">
+          <span class="d-flex justify-content-between pl-2 pr-3 w-100 pt-3 pb-3 border-bottom">
+            <span>
+              <a href="#" class="text-small text-dark t-decoration-none font-weight-bold">John Doe </a>
+              <span class="text-small text-muted"> likes this</span>
+            </span>
+            <i class="fas fa-ellipsis-h text-muted"></i>
+          </span>
+        
+          <span class="d-flex flex-row justify-content-start pt-2 pl-3">
+            <a href="#" class="mr-2 align-self-center">
+              <!-- User Icon Rounded -->
+              <i class="p-3 far fa-user bg-secondary rounded-circle text-white"></i>
+            </a>
+        
+            <span class="d-flex flex-column ">
+              <!-- 1 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="font-weight-bold text-dark text-small ">John Canvas</a>
+                <a href="#" class="text-muted text-small l-height-1 "> 2nd</a>
+              </span>
+              <!-- 2 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                <a href="#">
+        
+                </a>
+              </span>
+              <!-- 3 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="text-small l-height-1 text-muted">20h</a>
+                <i class="fas fa-globe text-muted fa-sm"></i>
+              </span>
+            </span>
+          </span>
+        
+          <div class="mt-2 border mx-3 pb-2">
+            <span class="d-flex flex-row justify-content-start pt-2 pl-2">
+              <a href="#" class="mr-2 align-self-center">
+                <!-- User Icon Rounded -->
+                <i class="p-3 far fa-user bg-secondary rounded-circle text-white"></i>
+              </a>
+        
+              <span class="d-flex flex-column ">
+                <!-- 1 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="font-weight-bold text-dark text-small ">Jeffrey Simpson</a>
+                  <a href="#" class="text-muted text-small l-height-1 "> 2nd</a>
+                </span>
+                <!-- 2 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                  <a href="#">
+        
+                  </a>
+                </span>
+                <!-- 3 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="text-small l-height-1 text-muted">20h</a>
+                  <i class="fas fa-globe text-muted fa-sm"></i>
+                </span>
+              </span>
+            </span>
+        
+            <p class="mt-1 mx-2 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse aliquid eaque, necessitatibus
+              quasi aperiam totam tempora
+              <a href="#" class="text-muted">...see more</a>
+            </p>
+        
+            <a href="#" class="ml-2 text-small">See Translation</a>
+          </div>
+        
+          <!-- Comment & Likes -->
+          <div class="mx-3 mt-3 border-bottom pb-2">
+            <span>
+              <a href="#">
+                <i class="far fa-thumbs-up bg-primary py-1 text-white fa-xs rounded-circle"></i>
+                <span class="text-small text-muted"> 9</span>
+              </a>
+            </span>
+            <span> . </span>
+            <a href="#" class="text-small text-muted">3 Comments</a>
+          </div>
+          <!-- End of Comment & Likes -->
+        
+          <!-- Actions - Like, Comment, Share -->
+        
+        
+          <span class="d-flex flex-row justify-content-between mx-3 mt-2 mb-3">
+            <span>
+        
+              <a href="#">
+                <i class="far fa-thumbs-up text-muted"> Like</i>
+              </a>
+              <a href="#" class="ml-2">
+                <i class="far fa-comment text-muted"> Comment</i>
+              </a>
+              <a href="#" class="ml-2">
+                <i class="fas fa-share text-muted"> Share</i>
+              </a>
+            </span>
+            <span>
+              <a class="btn-outline-secondary dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true"
+                data-target="most-relevant-1" aria-expanded="false">
+                <span class="font-weight-bold text-small">Most Relevant </span>
+              </a>
+              <div class="dropdown-menu" area-labelledby="most-relevant-1">
+                <a class="dropdown-item" href="#">Most Relevant</a>
+                <a class="dropdown-item" href="#">Most Recent</a>
+              </div>
+            </span>
+          </span>
+          <!-- End of Actions - Like, Comment, Share -->
+        
+          <!-- Add Comment with Uploading File Option -->
+          <div class="d-flex flex-row content-space-between ml-4 mr-3">
+            <img src="img/profile-photo/prof-3.jpg" alt="prof" class="rounded-circle" style="height: 2rem;">
+        
+            <form class="form-inline ml-2 w-100">
+              <div class="input-group w-100">
+                <input type="search" class="form-control" style="border-radius:2rem;" placeholder="Add a Comment">
+                <div class="input-group-append">
+                  <div style="margin-left: -2rem;" class="upload-button-with-icon align-middle">
+                    <i class="fas fa-camera fa-lg text-muted "></i>
+                    <input type="file">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End of Add Comment with Uploading File Option -->
+        
+        
+          <div class="d-flex flex-row justify-content-between mr-3 ml-4 mt-3 mb-2">
+            <img src="img/profile-photo/prof-3.jpg" alt="prof" class="rounded-circle mt-3" style="height: 2rem;">
+        
+            <div class="ml-2">
+        
+              <div style="background-color: rgba(211, 233, 241, 0.247); border-radius: .5rem;" class="p-2">
+        
+                <div class="d-flex flex-column mt-0  ">
+                  <div class="d-flex flex-row justify-content-between ">
+                    <span class="l-height-1">
+                      <a href="#" class="font-weight-bold text-dark text-small ">David Jackson</a>
+                      <a href="#" class="text-muted text-small l-height-1 "> Following</a>
+                    </span>
+                    <span class="l-height-1">
+                      <a href="#" class="text-small l-height-1 text-muted">13h</a>
+                      <i class="fas fa-globe text-muted fa-sm"></i>
+                    </span>
+                  </div>
+                  <span class="l-height-1">
+                    <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                    <a href="#">
+                    </a>
+                  </span>
+                </div>
+        
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus labore accusantium quis
+                  consequuntur
+                  distinctio sed, alias doloremque provident, moles
+                </span>
+        
+        
+        
+        
+                <a href="#" class="text-muted">...see more</a>
+        
+                <a href="#" class="ml-2 text-small">See Translation</a>
+              </div> <!-- End of coloured comment section -->
+        
+              <!-- Comment & Likes for Comment -->
+              <div class="mx-2 ">
+                <span>
+                  <a href="#">
+                    <i class="far fa-thumbs-up  text-muted fa-xs "></i>
+                  </a>
+                </span>
+                <span> . </span>
+                <a href="#" class="text-muted text-small">3 Likes</a>
+                <span class="text-muted text-small mx-2"> | </span>
+                <a href="#">
+                  <i class="far fa-comment text-muted fa-xs"></i>
+                </a>
+              </div>
+              <!-- End of Comment & Likes for Comment -->
+        
+        
+            </div>
+          </div>
+          <a href="#" class="d-block text-muted text-small ml-3 my-2">Load more comments</a>
+        </div>
+        <!-- End of Like This card -->
+
+        <!-- Like This card -->
+        <div id="like-this-card" class="my-2 border border-muted rounded bg-white">
+          <span class="d-flex justify-content-between pl-2 pr-3 w-100 pt-3 pb-3 border-bottom">
+            <span>
+              <a href="#" class="text-small text-dark t-decoration-none font-weight-bold">John Doe </a>
+              <span class="text-small text-muted"> likes this</span>
+            </span>
+            <i class="fas fa-ellipsis-h text-muted"></i>
+          </span>
+        
+          <span class="d-flex flex-row justify-content-start pt-2 pl-3">
+            <a href="#" class="mr-2 align-self-center">
+              <!-- User Icon Rounded -->
+              <i class="p-3 far fa-user bg-secondary rounded-circle text-white"></i>
+            </a>
+        
+            <span class="d-flex flex-column ">
+              <!-- 1 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="font-weight-bold text-dark text-small ">John Canvas</a>
+                <a href="#" class="text-muted text-small l-height-1 "> 2nd</a>
+              </span>
+              <!-- 2 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                <a href="#">
+        
+                </a>
+              </span>
+              <!-- 3 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="text-small l-height-1 text-muted">20h</a>
+                <i class="fas fa-globe text-muted fa-sm"></i>
+              </span>
+            </span>
+          </span>
+        
+          <div class="mt-2 border mx-3 pb-2">
+            <span class="d-flex flex-row justify-content-start pt-2 pl-2">
+              <a href="#" class="mr-2 align-self-center">
+                <!-- User Icon Rounded -->
+                <i class="p-3 far fa-user bg-secondary rounded-circle text-white"></i>
+              </a>
+        
+              <span class="d-flex flex-column ">
+                <!-- 1 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="font-weight-bold text-dark text-small ">Jeffrey Simpson</a>
+                  <a href="#" class="text-muted text-small l-height-1 "> 2nd</a>
+                </span>
+                <!-- 2 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                  <a href="#">
+        
+                  </a>
+                </span>
+                <!-- 3 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="text-small l-height-1 text-muted">20h</a>
+                  <i class="fas fa-globe text-muted fa-sm"></i>
+                </span>
+              </span>
+            </span>
+        
+            <p class="mt-1 mx-2 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse aliquid eaque, necessitatibus
+              quasi aperiam totam tempora
+              <a href="#" class="text-muted">...see more</a>
+            </p>
+        
+            <a href="#" class="ml-2 text-small">See Translation</a>
+          </div>
+        
+          <!-- Comment & Likes -->
+          <div class="mx-3 mt-3 border-bottom pb-2">
+            <span>
+              <a href="#">
+                <i class="far fa-thumbs-up bg-primary py-1 text-white fa-xs rounded-circle"></i>
+                <span class="text-small text-muted"> 9</span>
+              </a>
+            </span>
+            <span> . </span>
+            <a href="#" class="text-small text-muted">3 Comments</a>
+          </div>
+          <!-- End of Comment & Likes -->
+        
+          <!-- Actions - Like, Comment, Share -->
+        
+        
+          <span class="d-flex flex-row justify-content-between mx-3 mt-2 mb-3">
+            <span>
+        
+              <a href="#">
+                <i class="far fa-thumbs-up text-muted"> Like</i>
+              </a>
+              <a href="#" class="ml-2">
+                <i class="far fa-comment text-muted"> Comment</i>
+              </a>
+              <a href="#" class="ml-2">
+                <i class="fas fa-share text-muted"> Share</i>
+              </a>
+            </span>
+            <span>
+              <a class="btn-outline-secondary dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true"
+                data-target="most-relevant-1" aria-expanded="false">
+                <span class="font-weight-bold text-small">Most Relevant </span>
+              </a>
+              <div class="dropdown-menu" area-labelledby="most-relevant-1">
+                <a class="dropdown-item" href="#">Most Relevant</a>
+                <a class="dropdown-item" href="#">Most Recent</a>
+              </div>
+            </span>
+          </span>
+          <!-- End of Actions - Like, Comment, Share -->
+        
+          <!-- Add Comment with Uploading File Option -->
+          <div class="d-flex flex-row content-space-between ml-4 mr-3">
+            <img src="img/profile-photo/prof-3.jpg" alt="prof" class="rounded-circle" style="height: 2rem;">
+        
+            <form class="form-inline ml-2 w-100">
+              <div class="input-group w-100">
+                <input type="search" class="form-control" style="border-radius:2rem;" placeholder="Add a Comment">
+                <div class="input-group-append">
+                  <div style="margin-left: -2rem;" class="upload-button-with-icon align-middle">
+                    <i class="fas fa-camera fa-lg text-muted "></i>
+                    <input type="file">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End of Add Comment with Uploading File Option -->
+        
+        
+          <div class="d-flex flex-row justify-content-between mr-3 ml-4 mt-3 mb-2">
+            <img src="img/profile-photo/prof-3.jpg" alt="prof" class="rounded-circle mt-3" style="height: 2rem;">
+        
+            <div class="ml-2">
+        
+              <div style="background-color: rgba(211, 233, 241, 0.247); border-radius: .5rem;" class="p-2">
+        
+                <div class="d-flex flex-column mt-0  ">
+                  <div class="d-flex flex-row justify-content-between ">
+                    <span class="l-height-1">
+                      <a href="#" class="font-weight-bold text-dark text-small ">David Jackson</a>
+                      <a href="#" class="text-muted text-small l-height-1 "> Following</a>
+                    </span>
+                    <span class="l-height-1">
+                      <a href="#" class="text-small l-height-1 text-muted">13h</a>
+                      <i class="fas fa-globe text-muted fa-sm"></i>
+                    </span>
+                  </div>
+                  <span class="l-height-1">
+                    <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                    <a href="#">
+                    </a>
+                  </span>
+                </div>
+        
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus labore accusantium quis
+                  consequuntur
+                  distinctio sed, alias doloremque provident, moles
+                </span>
+        
+        
+        
+        
+                <a href="#" class="text-muted">...see more</a>
+        
+                <a href="#" class="ml-2 text-small">See Translation</a>
+              </div> <!-- End of coloured comment section -->
+        
+              <!-- Comment & Likes for Comment -->
+              <div class="mx-2 ">
+                <span>
+                  <a href="#">
+                    <i class="far fa-thumbs-up  text-muted fa-xs "></i>
+                  </a>
+                </span>
+                <span> . </span>
+                <a href="#" class="text-muted text-small">3 Likes</a>
+                <span class="text-muted text-small mx-2"> | </span>
+                <a href="#">
+                  <i class="far fa-comment text-muted fa-xs"></i>
+                </a>
+              </div>
+              <!-- End of Comment & Likes for Comment -->
+        
+        
+            </div>
+          </div>
+          <a href="#" class="d-block text-muted text-small ml-3 my-2">Load more comments</a>
+        </div>
+        <!-- End of Like This card -->
+
+                <!-- Like This card -->
+        <div id="like-this-card" class="my-2 border border-muted rounded bg-white">
+          <span class="d-flex justify-content-between pl-2 pr-3 w-100 pt-3 pb-3 border-bottom">
+            <span>
+              <a href="#" class="text-small text-dark t-decoration-none font-weight-bold">John Doe </a>
+              <span class="text-small text-muted"> likes this</span>
+            </span>
+            <i class="fas fa-ellipsis-h text-muted"></i>
+          </span>
+        
+          <span class="d-flex flex-row justify-content-start pt-2 pl-3">
+            <a href="#" class="mr-2 align-self-center">
+              <!-- User Icon Rounded -->
+              <i class="p-3 far fa-user bg-secondary rounded-circle text-white"></i>
+            </a>
+        
+            <span class="d-flex flex-column ">
+              <!-- 1 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="font-weight-bold text-dark text-small ">John Canvas</a>
+                <a href="#" class="text-muted text-small l-height-1 "> 2nd</a>
+              </span>
+              <!-- 2 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                <a href="#">
+        
+                </a>
+              </span>
+              <!-- 3 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="text-small l-height-1 text-muted">20h</a>
+                <i class="fas fa-globe text-muted fa-sm"></i>
+              </span>
+            </span>
+          </span>
+        
+          <div class="mt-2 border mx-3 pb-2">
+            <span class="d-flex flex-row justify-content-start pt-2 pl-2">
+              <a href="#" class="mr-2 align-self-center">
+                <!-- User Icon Rounded -->
+                <i class="p-3 far fa-user bg-secondary rounded-circle text-white"></i>
+              </a>
+        
+              <span class="d-flex flex-column ">
+                <!-- 1 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="font-weight-bold text-dark text-small ">Jeffrey Simpson</a>
+                  <a href="#" class="text-muted text-small l-height-1 "> 2nd</a>
+                </span>
+                <!-- 2 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                  <a href="#">
+        
+                  </a>
+                </span>
+                <!-- 3 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="text-small l-height-1 text-muted">20h</a>
+                  <i class="fas fa-globe text-muted fa-sm"></i>
+                </span>
+              </span>
+            </span>
+        
+            <p class="mt-1 mx-2 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse aliquid eaque, necessitatibus
+              quasi aperiam totam tempora
+              <a href="#" class="text-muted">...see more</a>
+            </p>
+        
+            <a href="#" class="ml-2 text-small">See Translation</a>
+          </div>
+        
+          <!-- Comment & Likes -->
+          <div class="mx-3 mt-3 border-bottom pb-2">
+            <span>
+              <a href="#">
+                <i class="far fa-thumbs-up bg-primary py-1 text-white fa-xs rounded-circle"></i>
+                <span class="text-small text-muted"> 9</span>
+              </a>
+            </span>
+            <span> . </span>
+            <a href="#" class="text-small text-muted">3 Comments</a>
+          </div>
+          <!-- End of Comment & Likes -->
+        
+          <!-- Actions - Like, Comment, Share -->
+        
+        
+          <span class="d-flex flex-row justify-content-between mx-3 mt-2 mb-3">
+            <span>
+        
+              <a href="#">
+                <i class="far fa-thumbs-up text-muted"> Like</i>
+              </a>
+              <a href="#" class="ml-2">
+                <i class="far fa-comment text-muted"> Comment</i>
+              </a>
+              <a href="#" class="ml-2">
+                <i class="fas fa-share text-muted"> Share</i>
+              </a>
+            </span>
+            <span>
+              <a class="btn-outline-secondary dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true"
+                data-target="most-relevant-1" aria-expanded="false">
+                <span class="font-weight-bold text-small">Most Relevant </span>
+              </a>
+              <div class="dropdown-menu" area-labelledby="most-relevant-1">
+                <a class="dropdown-item" href="#">Most Relevant</a>
+                <a class="dropdown-item" href="#">Most Recent</a>
+              </div>
+            </span>
+          </span>
+          <!-- End of Actions - Like, Comment, Share -->
+        
+          <!-- Add Comment with Uploading File Option -->
+          <div class="d-flex flex-row content-space-between ml-4 mr-3">
+            <img src="img/profile-photo/prof-3.jpg" alt="prof" class="rounded-circle" style="height: 2rem;">
+        
+            <form class="form-inline ml-2 w-100">
+              <div class="input-group w-100">
+                <input type="search" class="form-control" style="border-radius:2rem;" placeholder="Add a Comment">
+                <div class="input-group-append">
+                  <div style="margin-left: -2rem;" class="upload-button-with-icon align-middle">
+                    <i class="fas fa-camera fa-lg text-muted "></i>
+                    <input type="file">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End of Add Comment with Uploading File Option -->
+        
+        
+          <div class="d-flex flex-row justify-content-between mr-3 ml-4 mt-3 mb-2">
+            <img src="img/profile-photo/prof-3.jpg" alt="prof" class="rounded-circle mt-3" style="height: 2rem;">
+        
+            <div class="ml-2">
+        
+              <div style="background-color: rgba(211, 233, 241, 0.247); border-radius: .5rem;" class="p-2">
+        
+                <div class="d-flex flex-column mt-0  ">
+                  <div class="d-flex flex-row justify-content-between ">
+                    <span class="l-height-1">
+                      <a href="#" class="font-weight-bold text-dark text-small ">David Jackson</a>
+                      <a href="#" class="text-muted text-small l-height-1 "> Following</a>
+                    </span>
+                    <span class="l-height-1">
+                      <a href="#" class="text-small l-height-1 text-muted">13h</a>
+                      <i class="fas fa-globe text-muted fa-sm"></i>
+                    </span>
+                  </div>
+                  <span class="l-height-1">
+                    <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                    <a href="#">
+                    </a>
+                  </span>
+                </div>
+        
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus labore accusantium quis
+                  consequuntur
+                  distinctio sed, alias doloremque provident, moles
+                </span>
+        
+        
+        
+        
+                <a href="#" class="text-muted">...see more</a>
+        
+                <a href="#" class="ml-2 text-small">See Translation</a>
+              </div> <!-- End of coloured comment section -->
+        
+              <!-- Comment & Likes for Comment -->
+              <div class="mx-2 ">
+                <span>
+                  <a href="#">
+                    <i class="far fa-thumbs-up  text-muted fa-xs "></i>
+                  </a>
+                </span>
+                <span> . </span>
+                <a href="#" class="text-muted text-small">3 Likes</a>
+                <span class="text-muted text-small mx-2"> | </span>
+                <a href="#">
+                  <i class="far fa-comment text-muted fa-xs"></i>
+                </a>
+              </div>
+              <!-- End of Comment & Likes for Comment -->
+        
+        
+            </div>
+          </div>
+          <a href="#" class="d-block text-muted text-small ml-3 my-2">Load more comments</a>
+        </div>
+        <!-- End of Like This card -->
+
+        <!-- Like This card -->
+        <div id="like-this-card" class="my-2 border border-muted rounded bg-white">
+          <span class="d-flex justify-content-between pl-2 pr-3 w-100 pt-3 pb-3 border-bottom">
+            <span>
+              <a href="#" class="text-small text-dark t-decoration-none font-weight-bold">John Doe </a>
+              <span class="text-small text-muted"> likes this</span>
+            </span>
+            <i class="fas fa-ellipsis-h text-muted"></i>
+          </span>
+        
+          <span class="d-flex flex-row justify-content-start pt-2 pl-3">
+            <a href="#" class="mr-2 align-self-center">
+              <!-- User Icon Rounded -->
+              <i class="p-3 far fa-user bg-secondary rounded-circle text-white"></i>
+            </a>
+        
+            <span class="d-flex flex-column ">
+              <!-- 1 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="font-weight-bold text-dark text-small ">John Canvas</a>
+                <a href="#" class="text-muted text-small l-height-1 "> 2nd</a>
+              </span>
+              <!-- 2 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                <a href="#">
+        
+                </a>
+              </span>
+              <!-- 3 / 3 rows -->
+              <span class="l-height-1">
+                <a href="#" class="text-small l-height-1 text-muted">20h</a>
+                <i class="fas fa-globe text-muted fa-sm"></i>
+              </span>
+            </span>
+          </span>
+        
+          <div class="mt-2 border mx-3 pb-2">
+            <span class="d-flex flex-row justify-content-start pt-2 pl-2">
+              <a href="#" class="mr-2 align-self-center">
+                <!-- User Icon Rounded -->
+                <i class="p-3 far fa-user bg-secondary rounded-circle text-white"></i>
+              </a>
+        
+              <span class="d-flex flex-column ">
+                <!-- 1 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="font-weight-bold text-dark text-small ">Jeffrey Simpson</a>
+                  <a href="#" class="text-muted text-small l-height-1 "> 2nd</a>
+                </span>
+                <!-- 2 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                  <a href="#">
+        
+                  </a>
+                </span>
+                <!-- 3 / 3 rows -->
+                <span class="l-height-1">
+                  <a href="#" class="text-small l-height-1 text-muted">20h</a>
+                  <i class="fas fa-globe text-muted fa-sm"></i>
+                </span>
+              </span>
+            </span>
+        
+            <p class="mt-1 mx-2 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse aliquid eaque, necessitatibus
+              quasi aperiam totam tempora
+              <a href="#" class="text-muted">...see more</a>
+            </p>
+        
+            <a href="#" class="ml-2 text-small">See Translation</a>
+          </div>
+        
+          <!-- Comment & Likes -->
+          <div class="mx-3 mt-3 border-bottom pb-2">
+            <span>
+              <a href="#">
+                <i class="far fa-thumbs-up bg-primary py-1 text-white fa-xs rounded-circle"></i>
+                <span class="text-small text-muted"> 9</span>
+              </a>
+            </span>
+            <span> . </span>
+            <a href="#" class="text-small text-muted">3 Comments</a>
+          </div>
+          <!-- End of Comment & Likes -->
+        
+          <!-- Actions - Like, Comment, Share -->
+        
+        
+          <span class="d-flex flex-row justify-content-between mx-3 mt-2 mb-3">
+            <span>
+        
+              <a href="#">
+                <i class="far fa-thumbs-up text-muted"> Like</i>
+              </a>
+              <a href="#" class="ml-2">
+                <i class="far fa-comment text-muted"> Comment</i>
+              </a>
+              <a href="#" class="ml-2">
+                <i class="fas fa-share text-muted"> Share</i>
+              </a>
+            </span>
+            <span>
+              <a class="btn-outline-secondary dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true"
+                data-target="most-relevant-1" aria-expanded="false">
+                <span class="font-weight-bold text-small">Most Relevant </span>
+              </a>
+              <div class="dropdown-menu" area-labelledby="most-relevant-1">
+                <a class="dropdown-item" href="#">Most Relevant</a>
+                <a class="dropdown-item" href="#">Most Recent</a>
+              </div>
+            </span>
+          </span>
+          <!-- End of Actions - Like, Comment, Share -->
+        
+          <!-- Add Comment with Uploading File Option -->
+          <div class="d-flex flex-row content-space-between ml-4 mr-3">
+            <img src="img/profile-photo/prof-3.jpg" alt="prof" class="rounded-circle" style="height: 2rem;">
+        
+            <form class="form-inline ml-2 w-100">
+              <div class="input-group w-100">
+                <input type="search" class="form-control" style="border-radius:2rem;" placeholder="Add a Comment">
+                <div class="input-group-append">
+                  <div style="margin-left: -2rem;" class="upload-button-with-icon align-middle">
+                    <i class="fas fa-camera fa-lg text-muted "></i>
+                    <input type="file">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End of Add Comment with Uploading File Option -->
+        
+        
+          <div class="d-flex flex-row justify-content-between mr-3 ml-4 mt-3 mb-2">
+            <img src="img/profile-photo/prof-3.jpg" alt="prof" class="rounded-circle mt-3" style="height: 2rem;">
+        
+            <div class="ml-2">
+        
+              <div style="background-color: rgba(211, 233, 241, 0.247); border-radius: .5rem;" class="p-2">
+        
+                <div class="d-flex flex-column mt-0  ">
+                  <div class="d-flex flex-row justify-content-between ">
+                    <span class="l-height-1">
+                      <a href="#" class="font-weight-bold text-dark text-small ">David Jackson</a>
+                      <a href="#" class="text-muted text-small l-height-1 "> Following</a>
+                    </span>
+                    <span class="l-height-1">
+                      <a href="#" class="text-small l-height-1 text-muted">13h</a>
+                      <i class="fas fa-globe text-muted fa-sm"></i>
+                    </span>
+                  </div>
+                  <span class="l-height-1">
+                    <a href="#" class="text-small l-height-1 text-muted ">...</a>
+                    <a href="#">
+                    </a>
+                  </span>
+                </div>
+        
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus labore accusantium quis
+                  consequuntur
+                  distinctio sed, alias doloremque provident, moles
+                </span>
+        
+        
+        
+        
+                <a href="#" class="text-muted">...see more</a>
+        
+                <a href="#" class="ml-2 text-small">See Translation</a>
+              </div> <!-- End of coloured comment section -->
+        
+              <!-- Comment & Likes for Comment -->
+              <div class="mx-2 ">
+                <span>
+                  <a href="#">
+                    <i class="far fa-thumbs-up  text-muted fa-xs "></i>
+                  </a>
+                </span>
+                <span> . </span>
+                <a href="#" class="text-muted text-small">3 Likes</a>
+                <span class="text-muted text-small mx-2"> | </span>
+                <a href="#">
+                  <i class="far fa-comment text-muted fa-xs"></i>
+                </a>
+              </div>
+              <!-- End of Comment & Likes for Comment -->
+        
+        
+            </div>
+          </div>
+          <a href="#" class="d-block text-muted text-small ml-3 my-2">Load more comments</a>
+        </div>
+        <!-- End of Like This card -->
+
+        
+      </div> 
+      <!-- End of BODY CENTER -->
+
+      <!-- BODY RIGHT -->
+      <div id="content-body-right"  class="col-sm-4">
+
+
+
+        <!-- Add to your Feed -->
+        <div class=" border bg-light p-2">
+          <!-- First Row -->
+          <span class="d-flex justify-content-between">
+            <span>Add to your feed</span>
+            <a href="#">
+              <i class="fas fa-info-circle fa-sm text-muted"></i>
+            </a>
+          </span>
+          <!-- End of First Row -->
+
+          <div class="row">
+            <div class="col col-sm-12 d-flex flex-row justify-content-between my-2">
+              <div class="d-flex">
+                <a href="#">
+                  <i class="fab fa-css3 text-primary fa-3x"></i>
+                </a>
+                <span>
+                  <a href="#" class="font-weight-bold text-muted">CSS Skills</a>                  
+                </span>
+              </div>
+              <button type="button"  class="btn btn-sm  btn-outline-secondary">
+                <i class="fas fa-plus fa-sm text-primary t-decoration-none"></i>
+                <span class="text-primary">Follow</span>
+              </button>
+            </div>
+            <div class="col col-sm-12 d-flex flex-row justify-content-between my-2">
+              <div class="d-flex">
+                <a href="#">
+                  <i class="fab fa-css3 text-primary fa-3x"></i>
+                </a>
+                <span>
+                  <a href="#" class="font-weight-bold text-muted">CSS Skills</a>                  
+                </span>
+              </div>
+              <button type="button"  class="btn btn-sm  btn-outline-secondary">
+                <i class="fas fa-plus fa-sm text-primary t-decoration-none"></i>
+                <span class="text-primary">Follow</span>
+              </button>
+            </div>
+            <div class="col col-sm-12 d-flex flex-row justify-content-between my-2">
+              <div class="d-flex">
+                <a href="#">
+                  <i class="fab fa-css3 text-primary fa-3x"></i>
+                </a>
+                <span>
+                  <a href="#" class="font-weight-bold text-muted">CSS Skills</a>                  
+                </span>
+              </div>
+              <button type="button"  class="btn btn-sm  btn-outline-secondary">
+                <i class="fas fa-plus fa-sm text-primary t-decoration-none"></i>
+                <span class="text-primary">Follow</span>
+
+              </button>
+            </div>
+            <div class="col sm-12">
+              <a href="#" class="t-decoration-none">View all recommendations</a>
+            </div>
+          </div>
+        </div>
+        <!-- End of Add to your Feed -->
+
+        <!-- Follow Recommendation -->
+        <div 
+          class="p-2 border bg-white" 
+          style="border-color: #ccc !important;
+            position: sticky;
+            top: 4rem; 
+          "
+        >
+          <span class="d-flex justify-content-end text-mini">
+            Ad
+            <a href="#" class="ml-2">
+              <i class="fas fa-ellipsis-h text-muted text-mini"></i>
+            </a>
+          </span>
+          <p class="text-center text-small text-muted">Get the latest jobs and industry news</p>
+          <div class="d-flex justify-content-center">
+            <img src="img/profile-photo/prof-3.jpg" alt="img" class="rounded-circle mr-3" style="width: 4rem;">
+            <img src="img/profile-photo/prof-3.jpg" alt="img" class="rounded-circle" style="width: 4rem;">
+          </div>
+          <p class="text-center my-2  text-muted">Jane, explore relevant opportunities with <span class="font-weight-bold">Philip Morris Intl.</span></p>
+          <button type="button" class="d-block btn btn-sm  btn-outline-secondary mx-auto m-2">
+            
+            <span class="text-primary">Follow</span>
+          </button>
+        </div>
+        <!-- End of Follow Recommendation -->
+
+        
+        
+      </div>
+      <!-- End of BODY RIGHT -->
+    </div>
+  </div> <!-- End of  BODY  -->
+
+
+  <!-- Messages Section -->
+  <div id="collapsable-messages" class="" style="position: fixed; bottom: 0; right: 1rem; width: 16.5rem;">
+    <p class="d-flex flex-row justify-content-between bg-dark" style="margin-bottom: 0 !important;">
+      <a  class="btn btn-dark d-flex flex-row justify-content-between" data-toggle="collapse" href="#collapseMessages" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        <span>
+          <img style="height: 1.5rem;" class="rounded-circle" src="img/profile-photo/prof-3.jpg" alt="as">
+        </span> 
+        <span style="font-size: .8rem;" class="ml-2 d-block text-light   align-self-center">Messaging</span>
+               
+      </a>
+      <span class="align-middle mr-2">
+        <a href="#" class="d-inline-block h-100 ">
+          <i class="far fa-edit text-light fa-sm  h-50 " style="margin-top: 80%;"></i>
+        </a>
+        <a href="#" class="d-inline-block h-100 ">
+          <i class="fas fa-ellipsis-h text-light fa-sm  h-50 " style="margin-top: 80%;"></i>
+        </a>
+        
+      </span>
+      
+    </p>
+
+    
+    <div class="collapse" id="collapseMessages">
+      <div class="card card-body ">
+
+
+        <div class="row">
+          <!-- Search Input inside Collapsable Messages -->
+          <form class="form-inline d-block col-sm-12 my-lg-0 m-0 p-0">
+            <div id='search-form-div' class="input-group m-0 p-0">
+              <span class="fa fa-search form-control-feedback left-icon-inside-input"></span>
+              <input class="form-control  mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+              <div class="dropdown right-button-inside-input">
+                <span class="fas fa-sliders-h fa-lg text-muted "></span>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-sliders-h fa-lg text-muted "></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- End of Search Input inside Collapsable Messages -->
+        </div>
+
+
+        <!-- Messages -->
+        <div class="mt-1">    
+          <!-- Message Card       -->          
+          <a href="#" class="message-card  t-decoration-none ">
+            <div class="d-flex flex-row justify-content-start ">
+              <img class="rounded-circle align-self-center" src="img/profile-photo/prof-3.jpg" alt="">
+              <div 
+                class=" d-inline text-truncate ml-1 "  
+                style="display: flex; flex-direction: column; align-content: center; height: 2.8rem;"
+              >
+                  <span style="margin-top: .5rem;" class="d-block align-middle text-muted my-0 py-0">John Purple</span>
+                  <p style="line-height: 1.25rem;" class="d-block message-text text-small  text-truncate  text-muted my-0 py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis minima praesentium nostrum similique! In?</p>
+              </div>
+            </div>
+          </a>
+          <!-- End of Message Card       -->
+          <!-- Message Card       -->          
+          <a href="#" class="message-card  t-decoration-none ">
+            <div class="d-flex flex-row justify-content-start ">
+              <img class="rounded-circle align-self-center" src="img/profile-photo/prof-3.jpg" alt="">
+              <div 
+                class=" d-inline text-truncate ml-1 "  
+                style="display: flex; flex-direction: column; align-content: center; height: 2.8rem;"
+              >
+                  <span style="margin-top: .5rem;" class="d-block align-middle text-muted my-0 py-0">John Purple</span>
+                  <p style="line-height: 1.25rem;" class="d-block message-text text-small  text-truncate  text-muted my-0 py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis minima praesentium nostrum similique! In?</p>
+              </div>
+            </div>
+          </a>
+          <!-- End of Message Card       -->
+          <!-- Message Card       -->          
+          <a href="#" class="message-card  t-decoration-none ">
+            <div class="d-flex flex-row justify-content-start ">
+              <img class="rounded-circle align-self-center" src="img/profile-photo/prof-3.jpg" alt="">
+              <div 
+                class=" d-inline text-truncate ml-1 "  
+                style="display: flex; flex-direction: column; align-content: center; height: 2.8rem;"
+              >
+                  <span style="margin-top: .5rem;" class="d-block align-middle text-muted my-0 py-0">John Purple</span>
+                  <p style="line-height: 1.25rem;" class="d-block message-text text-small  text-truncate  text-muted my-0 py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis minima praesentium nostrum similique! In?</p>
+              </div>
+            </div>
+          </a>
+          <!-- End of Message Card       -->
+          <!-- Message Card       -->          
+          <a href="#" class="message-card  t-decoration-none ">
+            <div class="d-flex flex-row justify-content-start ">
+              <img class="rounded-circle align-self-center" src="img/profile-photo/prof-3.jpg" alt="">
+              <div 
+                class=" d-inline text-truncate ml-1 "  
+                style="display: flex; flex-direction: column; align-content: center; height: 2.8rem;"
+              >
+                  <span style="margin-top: .5rem;" class="d-block align-middle text-muted my-0 py-0">John Purple</span>
+                  <p style="line-height: 1.25rem;" class="d-block message-text text-small  text-truncate  text-muted my-0 py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis minima praesentium nostrum similique! In?</p>
+              </div>
+            </div>
+          </a>
+          <!-- End of Message Card       -->
+          
+
+
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+  <!-- End of Messages Section -->
+
+
+
+
+
+
+
   
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

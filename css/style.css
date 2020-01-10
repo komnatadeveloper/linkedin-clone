@@ -1,0 +1,291 @@
+.mt-6 {
+  margin-top: 10rem;
+}
+.text-small {
+  font-size: 0.75rem;
+}
+.text-mini {
+  font-size: 0.6rem;
+}
+.l-height-1 {
+  line-height: 1rem;
+}
+.t-decoration-none {
+  text-decoration: none !important;
+}
+.text-darker {
+  color: #081014;
+}
+
+/*------------------- NAVBAR------------ */
+.navbar #nav-all-items {
+  width: 95%;
+  max-width: 1128px;
+  /* display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important; */
+  /* min-width: 1000px; */
+}
+/* Navbar Search */
+.navbar #nav-all-items #search-form-div input {
+  padding-left: 2.375rem;
+}
+.navbar #nav-all-items #search-form-div span {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/* Navbar Menu Items */
+.navbar #nav-all-items .collapse {
+    /* display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between  !important; */
+}
+
+.navbar #nav-all-items .collapse ul li {
+  padding-left: .3rem;
+  padding-right: .3rem;
+  margin-left: 1rem;  
+  margin-right: 1rem;  
+}
+
+
+.navbar .navbar-brand {
+  color: #0e76a8;
+}
+#navbar-main .nav-item .navbar-text {
+  font-size: 0.7rem ;
+  padding-bottom: 0;;
+}
+#navbar-main #profile-photo {
+  border-right: 1px solid #999;
+}
+#navbar-main #profile-photo  img {
+  width: 1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border-top: 0 !important;
+  padding-bottom: 0;
+  padding-top: 0;  
+}
+/*-------------------End of  NAVBAR------------ */
+
+
+/*------------------- CONTENT BODY ------------ */
+#content-body {
+  max-width: 1128px;
+  /* background-color: #eee; */
+  min-height: 100vh;
+}
+
+
+
+#content-body-left {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 100vh;
+  max-width: 186px !important;
+  /* background-color: #fef; */
+}
+
+#content-body-left .card img {
+  border-radius: 50%;
+}
+
+
+
+#content-body-left #my-design {
+  background: white;
+  /* border-bottom: 1px solid red !important;
+  border-right: 1px solid blue !important;
+  border: 3px red !important;
+  border-top: green; */
+  
+}
+
+#content-body-left #my-design #green-zone {
+  margin-left: 0;
+  height: 5rem;
+  background-color: #0db4d1;
+}
+
+#content-body-left #my-design img {
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  width: 5rem;
+  margin-top: -2.5rem;
+  left: 50%;
+  margin-left: -2.5rem;
+}
+
+#content-body-left #my-design h5 {
+  margin-top: 4rem !important;
+}
+
+#content-body-left #my-design .card-under-picture,
+#content-body-left #my-design .second-section {
+  border-bottom: 1px solid #ddd;
+}
+
+#content-body-left #my-design .text-small {
+  font-size: 0.75rem;
+}
+
+/* Sorting Posts */
+.left-side-hr {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: end;
+}
+
+.left-side-hr:before {
+  content: '';
+  border-top: 1px solid #bbb;
+  margin: 0 .5rem 0 0;
+  flex: 1 0 .5rem;
+}
+/* End of Sorting Posts */
+
+
+
+
+
+#content-body-center {
+  min-height: 100vh;
+  /* background-color: white; */
+  border: 1px red;
+}
+
+#content-body-center #write-post {
+  /* margin-top: 10rem !important; */
+}
+
+
+#content-body-center #write-post #input-row {
+  height: 3.5rem ;
+}
+
+#content-body-center #write-post #input-row #start-post {
+  margin-top: 1rem;
+  /* position: absolute !important; */
+  height: 1.5rem;
+  margin-left: 1rem;
+  /* top: 1rem !important; */
+
+}
+
+
+
+
+
+/* --------------Right Grid-------------- */
+#content-body-right {
+  min-height: 100vh;
+  /* background-color: #eee; */
+}
+
+
+.upload-button-with-icon {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 3;
+}
+/* .upload-button-with-icon a {
+  border: 1px grey;
+  display: inline-block;
+  height: 100%;
+} */
+.upload-button-with-icon i {
+  border: 1px grey;
+  /* height: 100%; */
+  margin-top: 50%;
+  
+  /* line-height: 100%;k */
+  
+  /* vertical-align: 0%; */
+  /* line-height: 100%;
+  text-align: center; */
+  
+ 
+}
+.upload-button-with-icon input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+
+
+/* Collapsable Message Form */
+
+#collapsable-messages .card {
+  padding-top: .5rem;
+}
+#collapsable-messages #search-form-div input {
+  /* margin: 1rem; */
+  margin-left: 1rem;
+  margin-right: 1rem !important;
+ 
+  padding-left: 2.375rem;
+  /* padding-right: 2.375rem; */
+}
+#collapsable-messages #search-form-div .left-icon-inside-input {
+    position: absolute;
+    left: 1rem;
+    z-index: 5;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+#collapsable-messages .right-button-inside-input {
+  position: absolute;
+  /* overflow: hidden; */
+  display: inline-block;
+  right: 1.5rem;
+  top: .5rem;
+  z-index: 3;
+}
+#collapsable-messages .right-button-inside-input button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+#collapsable-messages .right-button-inside-input .dropdown-menu {
+ margin-right: 2rem;
+}
+
+#collapsable-messages #collapseMessages .message-card {
+  
+}
+#collapsable-messages #collapseMessages .message-card img{
+  height: 2rem;
+}
+#collapsable-messages #collapseMessages .message-card .message-text{
+  overflow: hidden  !important;
+
+}
+
+
+/* End of Collapsable Message Form */
+
+
+
+
