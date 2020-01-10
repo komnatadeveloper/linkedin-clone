@@ -18,13 +18,21 @@
 }
 
 /*------------------- NAVBAR------------ */
+.navbar #nav-all-items {
+  width: 95%;
+  max-width: 1128px;
+  /* display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important; */
+  /* min-width: 1000px; */
+}
 /* Navbar Search */
-#navbar-main #search-form-div input {
+.navbar #nav-all-items #search-form-div input {
   padding-left: 2.375rem;
 }
-#navbar-main #search-form-div span {
+.navbar #nav-all-items #search-form-div span {
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     display: block;
     width: 2.375rem;
     height: 2.375rem;
@@ -35,10 +43,19 @@
 }
 
 /* Navbar Menu Items */
-
-.navbar #nav-all-items {
-  max-width: 1128px;
+.navbar #nav-all-items .collapse {
+    /* display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between  !important; */
 }
+
+.navbar #nav-all-items .collapse ul li {
+  padding-left: .3rem;
+  padding-right: .3rem;
+  margin-left: 1rem;  
+  margin-right: 1rem;  
+}
+
 
 .navbar .navbar-brand {
   color: #0e76a8;
@@ -58,12 +75,13 @@
   padding-bottom: 0;
   padding-top: 0;  
 }
+/*-------------------End of  NAVBAR------------ */
 
 
 /*------------------- CONTENT BODY ------------ */
 #content-body {
   max-width: 1128px;
-  background-color: #eee;
+  /* background-color: #eee; */
   min-height: 100vh;
 }
 
@@ -74,7 +92,7 @@
   padding-right: 0;
   min-height: 100vh;
   max-width: 186px !important;
-  background-color: #fef;
+  /* background-color: #fef; */
 }
 
 #content-body-left .card img {
@@ -144,7 +162,7 @@
 
 #content-body-center {
   min-height: 100vh;
-  background-color: white;
+  /* background-color: white; */
   border: 1px red;
 }
 
@@ -173,7 +191,7 @@
 /* --------------Right Grid-------------- */
 #content-body-right {
   min-height: 100vh;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 
@@ -211,11 +229,21 @@
 
 
 /* Collapsable Message Form */
-#collapsable-messages #search-form-div input {
-  padding-left: 2.375rem;
+
+#collapsable-messages .card {
+  padding-top: .5rem;
 }
-#collapsable-messages #search-form-div span {
+#collapsable-messages #search-form-div input {
+  /* margin: 1rem; */
+  margin-left: 1rem;
+  margin-right: 1rem !important;
+ 
+  padding-left: 2.375rem;
+  /* padding-right: 2.375rem; */
+}
+#collapsable-messages #search-form-div .left-icon-inside-input {
     position: absolute;
+    left: 1rem;
     z-index: 5;
     display: block;
     width: 2.375rem;
@@ -226,24 +254,36 @@
     color: #aaa;
 }
 
-
-.message-options-menu {
-  position: relative;
-  overflow: hidden;
+#collapsable-messages .right-button-inside-input {
+  position: absolute;
+  /* overflow: hidden; */
   display: inline-block;
+  right: 1.5rem;
+  top: .5rem;
   z-index: 3;
 }
-.message-options-menu i {
-  border: 1px grey;
-  margin-top: 50%; 
-    
-}
-.message-options-menu input[type=file] {
+#collapsable-messages .right-button-inside-input button {
   position: absolute;
   left: 0;
   top: 0;
   opacity: 0;
 }
+#collapsable-messages .right-button-inside-input .dropdown-menu {
+ margin-right: 2rem;
+}
+
+#collapsable-messages #collapseMessages .message-card {
+  
+}
+#collapsable-messages #collapseMessages .message-card img{
+  height: 2rem;
+}
+#collapsable-messages #collapseMessages .message-card .message-text{
+  overflow: hidden  !important;
+
+}
+
+
 /* End of Collapsable Message Form */
 
 

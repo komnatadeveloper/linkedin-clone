@@ -14,21 +14,30 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
-    <span id="nav-all-items" class="d-flex mx-auto">
-      <a class="navbar-brand" href="#"><i class="fab fa-linkedin fa-2x "></i></a>
-
-    
-      <div class="collapse navbar-collapse" id="navbar-main">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 sticky-top">
+    <div id="nav-all-items" class="d-flex flex-row mx-auto" style="justify-content: space-between !important;">      
+      <span class="d-flex flex-row align-items-center">
+        <!-- LOGO -->
+        <a class="navbar-brand " href="#"><i class="fab fa-linkedin fa-2x "></i></a>
         <!-- Searchbar -->
-        <form  class="form-inline my-2 my-lg-0">
-          <div id='search-form-div' class="input-group">
+        <form  class="form-inline my-2 my-lg-0 ">
+          <div id='search-form-div' class="input-group ">
           <span class="fa fa-search form-control-feedback"></span>
             <input class="form-control  mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           </div>
         </form>
+      </span>
+
+    
+      <div 
+        class="collapse navbar-collapse d-inline d-flex flex-row justify-content-end " 
+        id="navbar-main"
+        style="justify-self: flex-end;"
+      >
         <!-- Other Menu Items on Navbar -->
-        <ul class="navbar-nav mr-auto">
+        <ul 
+          class="navbar-nav mr-auto d-flex flex-row justify-content-end w-100"
+        >
 
           <li class="nav-item active">
             <a class="nav-link d-flex flex-column" href="#"> 
@@ -80,16 +89,16 @@
           </li>        
         </ul>      
       </div>
-    </span>
+    </div>
   </nav>
   <!-- End of Navbar -->
 
   <!-- BODY  -->
-  <div id="content-body" class="container mx-auto">
-    <div class="row">
+  <div id="content-body" class="container mx-auto mt-5">
+    <div class="row ">
 
       <!-- BODY LEFT -->
-      <div id="content-body-left"  class="col-sm-2 pt-4 py-0">
+      <div id="content-body-left"  class="col-sm-2  py-0">
 
 
         
@@ -97,7 +106,7 @@
 
 
         <!-- Profile left My Design -->
-        <div id="my-design" class="my-2 border border-muted rounded">
+        <div id="my-design" class="mb-2 border border-muted rounded">
           <div id="green-zone">
 
           </div>
@@ -161,8 +170,8 @@
 
 
 
-        <div class="mt-5  " id="write-post">
-          <div class="bg-light mx-0 px-0 border rounded">
+        <div class=""   id="write-post">
+          <div class=" mx-0 px-0 border rounded">
             <div id="input-row" class="d-flex flex-row justify-content-between border-bottom  t-decoration-none">
 
               <a  href="#" class="t-decoration-none w-100 border-right">
@@ -186,7 +195,7 @@
               </a>          
             </div>
 
-            <div style="height: 3rem;" class="m-0 ">
+            <div style="height: 3rem;" class="m-0 bg-light">
               <div style="height: 3rem;" class="m-0 d-flex flex-column align-items-center">
                 <div style="margin-top: 0.75rem;" class=" w-100">
                   <div style="height: 1.5rem;  margin-left: 1rem;"><a href="#"  class="t-decoration-none d-inline">Write an article</a>
@@ -1001,13 +1010,13 @@
       </div> 
       <!-- End of BODY CENTER -->
 
-      <!-- Right Grid -->
+      <!-- BODY RIGHT -->
       <div id="content-body-right"  class="col-sm-4">
 
 
 
         <!-- Add to your Feed -->
-        <div class="mt-2 border bg-light p-2">
+        <div class=" border bg-light p-2">
           <!-- First Row -->
           <span class="d-flex justify-content-between">
             <span>Add to your feed</span>
@@ -1092,7 +1101,7 @@
         
         
       </div>
-      <!-- End of Right Grid -->
+      <!-- End of BODY RIGHT -->
     </div>
   </div> <!-- End of  BODY  -->
 
@@ -1119,51 +1128,103 @@
       </span>
       
     </p>
-    <!-- <p class="position-absolute" style="bottom: 2rem; right: 0 !important;">
-      <a  class="btn btn-danger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-        aria-controls="collapseExample">
-        Button2
-      </a>
-      
-    </p> -->
+
+    
     <div class="collapse" id="collapseMessages">
-      <div class="card card-body">
+      <div class="card card-body ">
+
 
         <div class="row">
-          <form class="form-inline d-block col-sm-12 my-lg-0">
-            <div id='search-form-div' class="input-group">
-              <span class="fa fa-search form-control-feedback"></span>
+          <!-- Search Input inside Collapsable Messages -->
+          <form class="form-inline d-block col-sm-12 my-lg-0 m-0 p-0">
+            <div id='search-form-div' class="input-group m-0 p-0">
+              <span class="fa fa-search form-control-feedback left-icon-inside-input"></span>
               <input class="form-control  mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 
-              <div style="margin-left: -2.35rem;" class="message-options-menu align-middle">
-                <a href="">
+              <div class="dropdown right-button-inside-input">
+                <span class="fas fa-sliders-h fa-lg text-muted "></span>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-sliders-h fa-lg text-muted "></i>
-                </a>
-
-
-                <!-- TEST -->
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button">Action</button>
-                    <button class="dropdown-item" type="button">Another action</button>
-                    <button class="dropdown-item" type="button">Something else here</button>
-                  </div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-                <!-- TEST -->
-                
               </div>
-
             </div>
           </form>
+          <!-- End of Search Input inside Collapsable Messages -->
         </div>
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh
-        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+
+        <!-- Messages -->
+        <div class="mt-1">    
+          <!-- Message Card       -->          
+          <a href="#" class="message-card  t-decoration-none ">
+            <div class="d-flex flex-row justify-content-start ">
+              <img class="rounded-circle align-self-center" src="img/profile-photo/prof-3.jpg" alt="">
+              <div 
+                class=" d-inline text-truncate ml-1 "  
+                style="display: flex; flex-direction: column; align-content: center; height: 2.8rem;"
+              >
+                  <span style="margin-top: .5rem;" class="d-block align-middle text-muted my-0 py-0">John Purple</span>
+                  <p style="line-height: 1.25rem;" class="d-block message-text text-small  text-truncate  text-muted my-0 py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis minima praesentium nostrum similique! In?</p>
+              </div>
+            </div>
+          </a>
+          <!-- End of Message Card       -->
+          <!-- Message Card       -->          
+          <a href="#" class="message-card  t-decoration-none ">
+            <div class="d-flex flex-row justify-content-start ">
+              <img class="rounded-circle align-self-center" src="img/profile-photo/prof-3.jpg" alt="">
+              <div 
+                class=" d-inline text-truncate ml-1 "  
+                style="display: flex; flex-direction: column; align-content: center; height: 2.8rem;"
+              >
+                  <span style="margin-top: .5rem;" class="d-block align-middle text-muted my-0 py-0">John Purple</span>
+                  <p style="line-height: 1.25rem;" class="d-block message-text text-small  text-truncate  text-muted my-0 py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis minima praesentium nostrum similique! In?</p>
+              </div>
+            </div>
+          </a>
+          <!-- End of Message Card       -->
+          <!-- Message Card       -->          
+          <a href="#" class="message-card  t-decoration-none ">
+            <div class="d-flex flex-row justify-content-start ">
+              <img class="rounded-circle align-self-center" src="img/profile-photo/prof-3.jpg" alt="">
+              <div 
+                class=" d-inline text-truncate ml-1 "  
+                style="display: flex; flex-direction: column; align-content: center; height: 2.8rem;"
+              >
+                  <span style="margin-top: .5rem;" class="d-block align-middle text-muted my-0 py-0">John Purple</span>
+                  <p style="line-height: 1.25rem;" class="d-block message-text text-small  text-truncate  text-muted my-0 py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis minima praesentium nostrum similique! In?</p>
+              </div>
+            </div>
+          </a>
+          <!-- End of Message Card       -->
+          <!-- Message Card       -->          
+          <a href="#" class="message-card  t-decoration-none ">
+            <div class="d-flex flex-row justify-content-start ">
+              <img class="rounded-circle align-self-center" src="img/profile-photo/prof-3.jpg" alt="">
+              <div 
+                class=" d-inline text-truncate ml-1 "  
+                style="display: flex; flex-direction: column; align-content: center; height: 2.8rem;"
+              >
+                  <span style="margin-top: .5rem;" class="d-block align-middle text-muted my-0 py-0">John Purple</span>
+                  <p style="line-height: 1.25rem;" class="d-block message-text text-small  text-truncate  text-muted my-0 py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis minima praesentium nostrum similique! In?</p>
+              </div>
+            </div>
+          </a>
+          <!-- End of Message Card       -->
+          
+
+
+        </div>
+
       </div>
     </div>
+    
   </div>
   <!-- End of Messages Section -->
 
